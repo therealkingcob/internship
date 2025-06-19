@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+
   document.getElementById("readText").addEventListener("click", async () => {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
@@ -10,4 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("output").textContent = pageText;
     });
   });
-});
+
